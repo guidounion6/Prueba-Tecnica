@@ -1,0 +1,10 @@
+.popular-container {
+    max-width: 1440px;
+    height: 566px;
+    margin-top: 80px;
+    padding: 0px;
+    gap: 40px;
+    opacity: 0px;
+    background-color: black;
+
+}

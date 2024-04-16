@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer'
 import Categories from './Components/Categories/Categories'
 import Bottom from './Components/Bottom/Bottom'
 
+
 const App = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const App = () => {
       <Popular/>
       <Bottom/>
       <Footer/>
+      
     </div>
   )
 }

@@ -1,0 +1,156 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    height: 290px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 221px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 50px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.footer-list {
+    list-style-type: none;
+    text-align: left;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.button-discourage {
+    width: 194px;
+    height: 40px;
+    top: 169px;
+    margin-left: 40px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #FFFFFF;
+
+}
+
+.button-discourage>button {
+    font-family: Rubik;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    text-align: justify;
+    height: 14px;
+    text-align: center;
+    padding-top: 12px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.text-container {
+    width: 330px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 42px;
+    padding-top: 30px
+}
+
+.text-powered {
+    width: 173.09px;
+    height: 15.16px;
+    font-family: Rubik;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-wrap: nowrap;
+
+}
+
+.text-pierce {
+    font-family: Outfit;
+    display: flex;
+    width: 69.37px;
+    height: 14.22px;
+    font-weight: 500;
+    font-size: 20px;
+    align-items: flex-end;
+}
+
+.footer-tienda {
+    padding-top: 80px
+}
+
+.footer-tienda>p {
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 37.5px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+}
+
+.footer-right {
+    width: 266;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 50px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.sucursales{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 3px;
+
+}
+
+span {
+    width: 266;
+    height: 64px;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px
+}
+
+.sign>p {
+    font-family: Rubik;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+
+}

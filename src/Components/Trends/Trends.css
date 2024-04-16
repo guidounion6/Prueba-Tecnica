@@ -1,16 +1,32 @@
 .Trends {
+    max-width: 1440px;
     height: 566px;
-    padding: 0px 70px 0px 70px;
+    padding: 0;
     margin-top: 80px;
-    gap: 40px; 
+    gap: 0px;
+    opacity: 0px;
     background-color: #DC1E0F;
 }
 
-.trends-title{
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    color:white; 
-    font-style: italic;
+.trends-title {
+    font-family: Roboto;
     font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: left;
+    color: white;
     padding-top: 50px;
+    margin-left: 70px
+}
+
+.cards-container {
+    max-width: 1300px;
+    height: 402px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 70px;
 }

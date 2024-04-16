@@ -1,5 +1,13 @@
-.Hero{
+.Hero {
+    width: 1442px;
     height: 427px;
-    margin-left: -2px;
-    background-color: yellow;
+    top: 121px;
+    left: -2px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+img {
+    width: 100%;
 }

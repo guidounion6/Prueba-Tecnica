@@ -1,0 +1,9 @@
+.cards-block{
+    display:flex;
+    flex-direction: row;
+    width: 246px;
+    height: 402px;
+    gap: 0px;
+    opacity: 0px;
+}
+
