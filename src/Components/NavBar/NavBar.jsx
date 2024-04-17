@@ -28,7 +28,7 @@ const NavBar = () => {
 
       <div className="header">
         <div className="titulo">
-          <p>Mi Tienda</p>
+          <h2>Mi Tienda</h2>
         </div>
 
         <div className="search-items">
@@ -54,7 +54,6 @@ const NavBar = () => {
           <li className="categories"><a href="#colchones" className='cat-a'>Colchones</a></li>
           <li className="categories"><a href="#Herramientas" className='cat-a'>Herramientas</a></li>
           <li className="ofertas"><a href="#ofertas" className='cat-of'>Ofertas<BiWorld style={worldicon} /></a></li>
-
         </ul>
       </div>
 

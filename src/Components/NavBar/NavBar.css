@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: Fixed (1440px)px;
-    height: Hug (121px)px;
+    width: 1440px;
+    height: 121px;
     padding: 14px 0px 14px 0px;
     gap: 34px;
 }
@@ -12,32 +12,36 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: Fill (1440px)px;
-    height: Hug (40px)px;
+    width: 1440px;
+    height: 40px;
     padding: 0px 70px 0px 70px;
     gap: 229px;
 }
 
 .titulo {
-    color: #0F1E7B;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 32px;
-    cursor: pointer;
+    width: 170px;
+    height: 38px;
+}
+
+.titulo>h2 {
     font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
     line-height: 37.5px;
     letter-spacing: 0.1em;
     text-align: left;
-
+    color: #0F1E7B;
+    display: inline
 }
 
 .search-items {
-    width: Hug (906px)px;
-    height: Hug (40px)px;
+    width: 906px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: flex-end;
     align-items: center;
     gap: 240px;
 }
@@ -80,17 +84,15 @@
 }
 
 .categories-container {
-    max-width: Hug(1440px)px;
-    height: Fixed 19px;
-    padding: 0px 0px 0px 0px;
+    max-width: 1440px;
+    height: 19px;
     display: inline;
-    margin-left: 68%;
+    margin-left: 53%;
     gap: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 240px;
 }
 
 .categories-list {
@@ -98,10 +100,11 @@
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    padding-left: 128px
 }
 
 .categories {
-    padding-right: 50px;
+    padding-right: 30px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
