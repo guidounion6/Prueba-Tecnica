@@ -21,12 +21,69 @@
 }
 
 .cards-container {
-    max-width: 1300px;
-    height: 402px;
+    width: 1300px;
+    height: 450px;
     gap: 0px;
     opacity: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-left: 70px;
+    overflow: hidden;
+    
+}
+
+.cards-component{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.cards {
+    min-width: 240px;
+    height: 402px;
+    background-color: white;
+    border: 1px solid white; 
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px 0px #CCCACA;
+    display: flex;
+    align-items: center;
+    margin-right: 20px
+}
+
+.producto-imagen {
+    width: 188px;
+    height: 188px;
+    top: 22px;
+    left: 29px;
+
+}
+
+.producto-nombre {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #5E5E5E;
+
+}
+
+.producto-precio {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.13px;
+    text-align: center;
+    color: #000000B8;
+}
+
+.producto-comprar {
+    width: 117px;
+    height: 33px;
+    gap: 0px;
+    border-radius: 20px;
+    border: 1px solid #DC1E0F;
+    background-color: white;
+    margin-left: 65px;
 }

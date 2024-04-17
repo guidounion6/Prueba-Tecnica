@@ -1,17 +1,32 @@
-import React from 'react'
+
+import React, { useEffect, useState } from 'react'
 import "./Trends.css"
-import Cards from '../Card/Cards'
-
-
-
+import { productos } from "../../productos"
 
 
 const Trends = () => {
+
+  const [cartItems, setCartItems] = useState()
+
+  useEffect(() => {
+    setCartItems(productos)
+  }, [])
   return (
     <div className="Trends">
-      <p className="trends-title">TENDENCIAS</p>
+      <h2 className="trends-title">TENDENCIAS</h2>
       <div className="cards-container">
-        <Cards />
+        {cartItems?.slice(1, 10).map((product) => (
+          <div className="cards">
+            <div key={product.id} className="">
+              <img src={product.imagen} alt="img" className="product-imagen" />
+              <div>
+                <h2 className="producto-nombre">{product.nombre}</h2>
+                <h3 className="producto-precio">${product.precio}</h3>
+                <button onClick={() => { console.log("agregar al carrito") }} className="producto-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )

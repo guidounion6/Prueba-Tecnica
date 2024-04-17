@@ -18,8 +18,10 @@
 
 }
 
-.cat-conteiner{
+.cat-conteiner {
     display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .zapatillas {
@@ -31,19 +33,93 @@
     background-image: url("../../assets/zapasNike.jpeg");
     background-size: cover;
     background-position: center;
-    
+
 }
 
 .futbol {
     width: 644.14px;
     height: 193px;
-    top: 1330px;
     margin-left: 11.71px;
-    gap: 0px;
-    opacity: 0px;
-    background-color: #BF2A2F ;
+    background-color: #BF2A2F;
     background-image: url("../../assets/botines.jpeg");
     background-size: cover;
     background-position: center;
+
+}
+
+.calzas {
+    width: 644.14px;
+    height: 193px;
+    margin-left: 327.92px;
+    margin-top: -193px;
+    background-color: #BF2A2F;
+    background-image: url("../../assets/calzas.jpeg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.pelotas {
+    width: 316.22px;
+    height: 391px;
+    margin-left: 11.7px;
+    margin-top: -390px;
+    background-color: #BF2A2F;
+    background-image: url("../../assets/pelotas.jpeg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.zapatillas>h3 {
+    width: 241px;
+    height: 45px;
+    padding-top: 290px;
+    padding-left: 20px;
+    font-family: Rubik;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.03px;
+    text-align: left;
+    color: white;
+}
+
+.futbol>h3 {
+    width: 155px;
+    height: 45px;
+    padding-top: 95px;
+    padding-left: 20px;
+    font-family: Rubik;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.03px;
+    text-align: left;
+    color: white;
+}
+
+.calzas>h3 {
+    width: 157px;
+    height: 45px;
+    padding-top: 95px;
+    padding-left: 20px;
+    font-family: Rubik;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.03px;
+    text-align: left;
+    color: white;
+}
+
+.pelotas>h3 {
+    width: 177px;
+    height: 45px;
+    padding-top: 290px;
+    padding-left: 20px;
+    font-family: Rubik;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.03px;
+    text-align: end;
+    color: white;
 
 }

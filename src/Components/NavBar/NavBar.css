@@ -6,9 +6,6 @@
     height: Hug (121px)px;
     padding: 14px 0px 14px 0px;
     gap: 34px;
-    opacity: 0px;
-
-
 }
 
 .header {
@@ -19,8 +16,6 @@
     height: Hug (40px)px;
     padding: 0px 70px 0px 70px;
     gap: 229px;
-    opacity: 0px;
-
 }
 
 .titulo {
@@ -30,8 +25,6 @@
     font-style: italic;
     font-size: 32px;
     cursor: pointer;
-    gap: 0px;
-    opacity: 0px;
     font-family: Roboto;
     line-height: 37.5px;
     letter-spacing: 0.1em;
@@ -47,7 +40,6 @@
     justify-content: space-around;
     align-items: center;
     gap: 240px;
-    opacity: 0px;
 }
 
 .searchbar {
@@ -55,15 +47,10 @@
     height: 40px;
     border-radius: 48px;
     border: 1px solid #BABABA;
-    gap: 0px;
-    opacity: 0px;
-
 }
 
 .nav-items {
     gap: 32px;
-    opacity: 0px;
-
 }
 
 .nav-items-list {
@@ -74,10 +61,6 @@
     color: #5E5E5E;
     list-style: none;
     cursor: pointer;
-    position: absolute;
-    top: 40px;
-    right: 228px
-    
 }
 
 .user {
@@ -97,14 +80,17 @@
 }
 
 .categories-container {
-    max-width: 1440px;
+    max-width: Hug(1440px)px;
     height: Fixed 19px;
-    padding: 0px 70px 0px 0px;
-    display: flex;
-    justify-content: flex-end;
+    padding: 0px 0px 0px 0px;
+    display: inline;
+    margin-left: 68%;
     gap: 24px;
-    opacity: 0px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 240px;
 }
 
 .categories-list {
@@ -112,8 +98,6 @@
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    margin: 0px 0px 0px 315px;
-   
 }
 
 .categories {

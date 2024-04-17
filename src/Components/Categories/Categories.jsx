@@ -5,15 +5,19 @@ import "./Categories.css"
 const Categories = () => {
   return (
     <div className="group1250">
-       <p className="cat-title">VISITÁ LAS CATEGORIAS MAS POPULARES</p>
+       <h2 className="cat-title">VISITÁ LAS CATEGORIAS MAS POPULARES</h2>
        <div className="cat-conteiner">
        <div className="zapatillas">
+        <h3>ZAPATILLAS</h3>
        </div>
        <div className="futbol">
+        <h3>FÚTBOL</h3>
        </div>
-       <div>
+       <div className="calzas">
+        <h3>CALZAS</h3>
        </div>
-       <div>
+       <div className="pelotas">
+        <h3>PELOTAS</h3>
        </div>
        </div>
     </div>

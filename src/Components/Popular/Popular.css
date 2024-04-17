@@ -1,10 +1,22 @@
 .popular-container {
     max-width: 1440px;
     height: 566px;
+    padding: 0;
     margin-top: 80px;
-    padding: 0px;
-    gap: 40px;
+    gap: 0px;
     opacity: 0px;
-    background-color: black;
+    background-color:white;
 
+}
+
+.popular-title {
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: left;
+    color: black;
+    padding-top: 50px;
+    margin-left: 70px
 }

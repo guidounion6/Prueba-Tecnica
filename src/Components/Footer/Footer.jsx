@@ -25,8 +25,9 @@ const Footer = () => {
   const locationLogo = {
     width: "48px",
     height: "28px",
-    position: "absolute",
-    left: "1125px"
+    position: "relative",
+    right: "18px",
+    top: "48px"
   }
 
   const logoAfip = {
@@ -61,7 +62,7 @@ const Footer = () => {
       <div className="footer-right">
         <div>
           <IoLocationOutline style={locationLogo} /><p className="sucursales">SUCURSALES</p>
-          <span> Whatsapp 2215137270
+          <span><a href="#whatsapp" className="cat-w">Whatsapp 2215137270</a> 
             <br />
             ecommerce@mateu.com.ar
             <br />

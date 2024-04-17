@@ -1,11 +1,9 @@
 .bottom-container {
     max-width: 1440px;
     height: 261px;
-    padding: 0px;
+    padding: 40px, 150px, 40px, 150px;
     margin-top: 80px;
-    gap: 0px;
-    justify-content: space-between;
-    opacity: 0px;
+    justify-content: center;
     background-color: #ECECEC;
     display: flex;
 
@@ -16,7 +14,7 @@
     height: 171.08px;
     gap: 24px;
     opacity: 0px;
-    padding: 40px 150px;
+    padding: 40px 100px 40px 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -57,7 +55,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 150px;
+    padding: 40px 100px 40px 100px;
 
 
 }
@@ -95,7 +93,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 150px 40px 150px;
+    padding: 25px 100px;
 
 }
 
