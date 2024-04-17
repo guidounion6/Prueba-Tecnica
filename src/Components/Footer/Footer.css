@@ -1,7 +1,7 @@
 .footer-container {
     display: flex;
     flex-direction: row;
-    max-width: 1440px;
+    width: 1440px;
     height: 290px;
     gap: 0px;
     opacity: 0px;
@@ -157,4 +157,23 @@ span {
 .cat-w{
     text-decoration: none;
     color: white
+}
+
+@media (max-width: 360px) {
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 681px;
+        gap: 0px;
+        opacity: 0px;
+        background-color: black;
+        color: white;
+        justify-content: space-between;
+    }
+    
+
+
+
 }

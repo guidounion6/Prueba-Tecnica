@@ -5,7 +5,7 @@
     margin-top: 80px;
     gap: 0px;
     opacity: 0px;
-    background-color:white;
+    background-color: white;
 
 }
 
@@ -18,5 +18,36 @@
     text-align: left;
     color: black;
     padding-top: 50px;
-    margin-left: 70px
+    margin-left: 70px;
+    width: 500px
+}
+
+@media (max-width: 360px) {
+
+    .popular-container {
+        width: Fixed (696px)px;
+        height: Fixed (380px)px;
+        padding: 0px 16px 0px 16px;
+        gap: 32px;
+        margin-top: 80px;
+        background-color: white;
+
+    }
+
+    .popular-title {
+        width: 218px;
+        height: 32px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 800;
+        text-align: left;
+        color: black;
+        padding-top: 50px;
+        margin-left: 70px;
+        width: 500px
+        
+    
+    }
+
 }

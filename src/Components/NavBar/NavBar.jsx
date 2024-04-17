@@ -19,7 +19,7 @@ const NavBar = () => {
     fontSize: "22px",
     position: "absolute",
     left: "905px",
-    top: "68px"
+    top: "26px"
   }
   const worldicon = { fontSize: "22px", paddingLeft: "10px" }
 

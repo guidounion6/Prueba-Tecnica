@@ -1,5 +1,5 @@
 .Trends {
-    max-width: 1440px;
+    width: 1440px;
     height: 566px;
     padding: 0;
     margin-top: 80px;
@@ -30,33 +30,31 @@
     justify-content: flex-start;
     margin-left: 70px;
     overflow: hidden;
-    
+
 }
 
-.cards-component{
+.cards-component {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
+
 .cards {
     min-width: 240px;
     height: 402px;
     background-color: white;
-    border: 1px solid white; 
+    border: 1px solid white;
     border-radius: 6px;
     box-shadow: 0px 2px 6px 0px #CCCACA;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-right: 20px
 }
 
 .producto-imagen {
     width: 188px;
     height: 188px;
-    top: 22px;
-    left: 29px;
-
 }
 
 .producto-nombre {
@@ -86,4 +84,117 @@
     border: 1px solid #DC1E0F;
     background-color: white;
     margin-left: 65px;
+    cursor: pointer;
+}
+
+.producto-comprar:hover {
+    background-color: #DC1E0F;
+    color: white
+}
+
+@media (max-width:360px) {
+
+    .Trends {
+        width: 696px;
+        height: 380px;
+        padding: 0px 16px 0px 16px;
+        gap: 32px;
+        opacity: 0px;
+
+    }
+
+    .trends-title {
+        font-family: Roboto;
+        width: 142px;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 32px;
+
+    }
+
+    .cards-container {
+        width: 342px;
+        height: 233px;
+        gap: 8px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: hidden;
+
+    }
+
+    .cards-component {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .cards {
+        min-width: 160px;
+        height: 233px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 6px;
+        box-shadow: 0px 2px 6px 0px #CCCACA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px
+    }
+
+    .product-imagen {
+        width: 99.35px;
+        height: 99.35px;
+    }
+
+    .producto-nombre {
+        width: 112px;
+        height: 40px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+
+    }
+
+    .producto-precio {
+        width: 66px;
+        height: 14px;
+        top: 183px;
+        left: 50px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14.06px;
+        text-align: center;
+        margin-left:20px
+    }
+
+    .producto-comprar {
+        width: 58px;
+        height: 18px;
+        border-radius: 20px;
+        border: 1px solid #DC1E0F;
+        background-color: white;
+        margin-left: 25px;
+        cursor: pointer;
+        color: #DC1E0F;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12.5px;
+        text-align: center;
+
+
+    }
+
+    .producto-comprar:hover {
+        background-color: #DC1E0F;
+        color: white
+    }
+
 }
