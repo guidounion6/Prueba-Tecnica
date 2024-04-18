@@ -16,9 +16,9 @@ const Trends = () => {
       <h2 className="trends-title">TENDENCIAS</h2>
       <div className="cards-container">
         {cartItems?.slice(1, 10).map((product) => (
-          <div className="cards">
-            <div key={product.id} className="">
-              <img src={product.imagen} alt="img" className="product-imagen" />
+          <div key={product.id} className="cards">
+            <div>
+              <img src={product.imagen} alt="img" className="producto-imagen" />
               <div>
                 <h2 className="producto-nombre">{product.nombre}</h2>
                 <h3 className="producto-precio">${product.precio}</h3>

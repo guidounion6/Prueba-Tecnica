@@ -3,8 +3,6 @@
     height: 566px;
     padding: 0;
     margin-top: 80px;
-    gap: 0px;
-    opacity: 0px;
     background-color: #DC1E0F;
 }
 
@@ -23,20 +21,12 @@
 .cards-container {
     width: 1300px;
     height: 450px;
-    gap: 0px;
-    opacity: 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 70px;
     overflow: hidden;
 
-}
-
-.cards-component {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .cards {
@@ -95,12 +85,11 @@
 @media (max-width:360px) {
 
     .Trends {
-        width: 696px;
+        width: 360px;
         height: 380px;
-        padding: 0px 16px 0px 16px;
         gap: 32px;
-        opacity: 0px;
-
+        margin-top: 40px;
+        
     }
 
     .trends-title {
@@ -110,26 +99,20 @@
         font-style: italic;
         font-weight: 800;
         line-height: 32px;
-
+        position: relative;
+        left: -60px;
+        top: -10px
     }
 
     .cards-container {
-        width: 342px;
-        height: 233px;
-        gap: 8px;
-        opacity: 0px;
+        width: 350px;
+        height: 277px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         overflow: hidden;
-
-    }
-
-    .cards-component {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
+        margin-left: 0px;
+        padding-left: 8px;
     }
 
     .cards {
@@ -142,10 +125,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 20px
     }
 
-    .product-imagen {
+    .producto-imagen {
         width: 99.35px;
         height: 99.35px;
     }

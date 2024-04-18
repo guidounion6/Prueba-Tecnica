@@ -37,7 +37,7 @@ const NavBar = ({ toggleVisible }) => {
     opacity: "0px",
     fontSize: "22px",
     position: "absolute",
-    left: "305px",
+    left: "310px",
     top: "77px"
   }
 
@@ -71,7 +71,7 @@ const NavBar = ({ toggleVisible }) => {
             <input type="search" className="searchbar" />
             <FiSearch style={searchicon} />
           </div>
-          <div className="nav-items" style={{ display: windowWidth > 360 ? 'block' : 'none' }}>
+          <div className="nav-items" style={{ display: windowWidth > 360 ? 'flex' : 'none' }}>
             <ul className="nav-items-list">
               <li className="user"> <a href="#micuenta"><HiOutlineUserCircle style={navicons} /></a> Mi cuenta</li>
               <li> <a href="#checkout"></a><PiShoppingCartBold style={navicons} /></li>

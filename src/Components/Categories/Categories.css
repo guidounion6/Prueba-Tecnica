@@ -1,10 +1,11 @@
+.categories-box {
+    margin-top: 80px;
+}
+
 .group1250 {
     width: 1300px;
     height: 455px;
-    margin-left: 70px;
-    margin-top: 80px;
-    gap: 0px;
-    opacity: 0px;
+    padding-left: 70px;
 }
 
 .cat-title {
@@ -18,7 +19,7 @@
 
 }
 
-.cat-conteiner {
+.cat-container {
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
@@ -27,8 +28,6 @@
 .zapatillas {
     width: 316.22px;
     height: 391px;
-    gap: 0px;
-    opacity: 0px;
     background-color: #BF2A2F;
     background-image: url("../../assets/zapasNike.jpeg");
     background-size: cover;
@@ -121,5 +120,55 @@
     line-height: 45.03px;
     text-align: end;
     color: white;
+
+}
+
+@media (max-width: 360px) {
+
+    .categories-box {
+        width: 360px;
+        height: 299px;
+        gap: 14px;
+        margin-top: 40px
+    }
+
+    .group1250 {
+        padding-left: 0px;
+    }
+
+    .cat-title {
+        width: 304.79px;
+        height: 56px;
+        padding: 0px, 16px, 0px, 16px;
+        gap: 10px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 28px;
+        text-align: left;
+        margin-left: 9px
+      
+    }
+
+    .cat-container-mini {
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        width: 360px;
+        height: 229px;
+        gap: 14px;
+        
+    }
+
+    .zapatillas {
+        width: 360px;
+        height: 208px;
+        background-color: #BF2A2F;
+        background-image: url("../../assets/zapasNike.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
+
 
 }

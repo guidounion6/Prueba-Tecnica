@@ -1,10 +1,8 @@
 .popular-container {
     max-width: 1440px;
     height: 566px;
-    padding: 0;
     margin-top: 80px;
     gap: 0px;
-    opacity: 0px;
     background-color: white;
 
 }
@@ -25,11 +23,10 @@
 @media (max-width: 360px) {
 
     .popular-container {
-        width: Fixed (696px)px;
-        height: Fixed (380px)px;
-        padding: 0px 16px 0px 16px;
+        width: 360px;
+        height: 380px;
         gap: 32px;
-        margin-top: 80px;
+        margin-top: 40px;
         background-color: white;
 
     }
@@ -38,16 +35,16 @@
         width: 218px;
         height: 32px;
         font-family: Roboto;
-        font-size: 32px;
+        font-size: 24px;
         font-style: italic;
         font-weight: 800;
         text-align: left;
         color: black;
         padding-top: 50px;
-        margin-left: 70px;
-        width: 500px
-        
-    
+        width: 300px; 
+        position: relative;
+        left: -60px;
+        top: -10px
     }
 
 }
