@@ -12,24 +12,31 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 1440px;
+>>>>>>> bcf6ef3a27a8dd8cd0fa1e6fe1b5170c7df9a746
     height: 40px;
     padding: 0px 70px 0px 70px;
     gap: 229px;
 }
 
 .titulo {
-    color: #0F1E7B;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 32px;
-    cursor: pointer;
+    width: 170px;
+    height: 38px;
+}
+
+.titulo>h2 {
     font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
     line-height: 37.5px;
     letter-spacing: 0.1em;
     text-align: left;
-
+    color: #0F1E7B;
+    display: inline
 }
 
 .search-items {
@@ -38,6 +45,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: flex-end;
     align-items: center;
     gap: 240px;
 }
@@ -82,15 +90,22 @@
 }
 
 .categories-container {
+<<<<<<< HEAD
     width: 100%;
     height: 19px;
     padding: 0px 0px 0px 0px;
     display: inline;
+=======
+    max-width: 1440px;
+    height: 19px;
+    display: inline;
+    margin-left: 53%;
+    gap: 24px;
+>>>>>>> bcf6ef3a27a8dd8cd0fa1e6fe1b5170c7df9a746
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 240px;
 }
 
 .categories-list {
@@ -98,10 +113,11 @@
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    padding-left: 128px
 }
 
 .categories {
-    padding-right: 50px;
+    padding-right: 30px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;

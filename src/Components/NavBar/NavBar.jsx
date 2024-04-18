@@ -63,7 +63,7 @@ const NavBar = ({ toggleVisible }) => {
 
       <div className="header">
         <div className="titulo">
-          <p>Mi Tienda</p>
+          <h2>Mi Tienda</h2>
         </div>
 
         <div className="search-items">
