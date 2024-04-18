@@ -12,11 +12,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-<<<<<<< HEAD
     width: 100%;
-=======
-    width: 1440px;
->>>>>>> bcf6ef3a27a8dd8cd0fa1e6fe1b5170c7df9a746
     height: 40px;
     padding: 0px 70px 0px 70px;
     gap: 229px;
@@ -90,18 +86,8 @@
 }
 
 .categories-container {
-<<<<<<< HEAD
     width: 100%;
     height: 19px;
-    padding: 0px 0px 0px 0px;
-    display: inline;
-=======
-    max-width: 1440px;
-    height: 19px;
-    display: inline;
-    margin-left: 53%;
-    gap: 24px;
->>>>>>> bcf6ef3a27a8dd8cd0fa1e6fe1b5170c7df9a746
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -198,6 +184,5 @@
         border-radius: 48px;
         border: 1px solid #BABABA;
     }
-
 
 }
