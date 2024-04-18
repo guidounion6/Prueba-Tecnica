@@ -15,7 +15,7 @@ img {
 @media (max-width: 360px) {
 
     .Hero {
-        width: 100%;
+        width: 360px;
         height: 140px;
     }
 

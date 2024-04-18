@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from './Components/NavBar/NavBar'
 import Hero from './Components/Hero/Hero'
 import Trends from './Components/Trends/Trends'
@@ -9,9 +9,16 @@ import Bottom from './Components/Bottom/Bottom'
 
 
 const App = () => {
+   
+  const [isVisible, setIsVisible] = useState(false)
+
+  const toggleVisible = () => {
+    setIsVisible( prev => !prev)
+  }
+
   return (
     <div>
-      <NavBar/>
+      <NavBar toggleVisible={toggleVisible}/>
       <Hero/>
       <Trends/>
       <Categories/>

@@ -163,7 +163,7 @@
         text-align: left;
         position: absolute;
         top: -10px;
-        left: 100px;
+        left: 95px;
         font-family: Roboto;
         font-size: 32px;
         font-style: italic;
@@ -178,9 +178,10 @@
         height: 40px;
         position: absolute;
         top: 80px;
-        left: 25px;
+        left: 12px;
         border-radius: 48px;
         border: 1px solid #BABABA;
     }
+
 
 }
