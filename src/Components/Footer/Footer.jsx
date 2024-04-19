@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Footer.css"
 import vtex from "../../assets/vtexlogo.png"
 import afip from "../../assets/data fiscal.jpeg"
@@ -7,18 +7,32 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const logoStyle = {
     color: "white",
     width: "60px",
     height: "30px",
-    paddingTop: "10px",
+    paddingTop: "5px",
     paddingLeft: "15px",
   }
 
   const pierceLogo = {
     width: "30px",
     height: "25px",
-    paddingTop: "12px",
+    paddingTop: "9px",
     paddingLeft: "10px",
   }
 
@@ -38,7 +52,7 @@ const Footer = () => {
 
   return (
     <div className="footer-container">
-      <div className="footer-left">
+      <div className="footer-left" >
         <div>
           <ul className="footer-list">
             <li>CONDICIONES</li>

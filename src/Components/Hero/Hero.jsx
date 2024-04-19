@@ -1,14 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Hero.css"
-import bike from "../../assets/bike.jpeg"
+
+import { imagenes } from "../../imagenes"
 
 
 const Hero = () => {
+
+   const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
+   const handleChangeImagen = (id) => {
+     setImagenSeleccionada(id);
+   };
+   useEffect(() => {
+    setImagenSeleccionada(imagenes[0].id);
+  }, []);
+
   return (
-    <div className="Hero">
-     <img src={bike} alt="bike" />
+    <div>
+      <div className="boton-container">
+      {imagenes.map((imagen) => (
+        <div key={imagen.id}>
+          <button
+            onClick={() => handleChangeImagen(imagen.id)}
+            className={`hero-button ${imagenSeleccionada === imagen.id ? 'selected' : ''}`}
+          ></button>
+        </div>
+      ))}
     </div>
-  )
-}
+
+    {imagenSeleccionada !== null && (
+        <img
+          src={imagenes.find((imagen) => imagen.id === imagenSeleccionada).nombre}
+          alt="Imagen"
+        />
+      )}
+    </div>
+  );
+};
+  
+
 
 export default Hero
