@@ -14,6 +14,20 @@ const Hero = () => {
     setImagenSeleccionada(imagenes[0].id);
   }, []);
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div className="boton-container">
@@ -33,6 +47,13 @@ const Hero = () => {
           alt="Imagen"
         />
       )}
+
+      <div className="button-hero-mini" style={{ display: windowWidth > 360  ? 'none' : 'flex' }}>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
     </div>
   );
 };

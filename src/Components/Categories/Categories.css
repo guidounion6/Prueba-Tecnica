@@ -32,7 +32,7 @@
     background-image: url("../../assets/zapasNike.jpeg");
     background-size: cover;
     background-position: center;
-
+    cursor: pointer;
 }
 
 .futbol {
@@ -43,7 +43,7 @@
     background-image: url("../../assets/botines.jpeg");
     background-size: cover;
     background-position: center;
-
+    cursor: pointer;
 }
 
 .calzas {
@@ -55,7 +55,7 @@
     background-image: url("../../assets/calzas.jpeg");
     background-size: cover;
     background-position: center;
-
+    cursor: pointer;
 }
 
 .pelotas {
@@ -67,7 +67,7 @@
     background-image: url("../../assets/pelotas.jpeg");
     background-size: cover;
     background-position: center;
-
+    cursor: pointer;
 }
 
 .zapatillas>h3 {
@@ -169,6 +169,41 @@
         background-size: cover;
         background-position: center;
     }
+    
+    .futbol {
+        width: 360px;
+        height: 208px;
+        background-color: #BF2A2F;
+        background-image: url("../../assets/botines.jpeg");
+        background-size: cover;
+        background-position: center;
+        margin-top: 0;
+        margin-left: 0;
+        position: absolute;
+    }
+    .calzas {
+        width: 360px;
+        height: 208px;
+        background-color: #BF2A2F;
+        background-image: url("../../assets/calzas.jpeg");
+        background-size: cover;
+        background-position: center;
+        margin-top: 0;
+        margin-left: 0;
+        position: absolute;
+    }
+    .pelotas {
+        width: 360px;
+        height: 208px;
+        background-color: #BF2A2F;
+        background-image: url("../../assets/pelotas.jpeg");
+        background-size: cover;
+        background-position: center;
+        margin-top: 0;
+        margin-left: 0;
+        position: absolute; 
+    }
+    
 
 
 }

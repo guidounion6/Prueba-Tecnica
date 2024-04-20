@@ -42,6 +42,22 @@ const Categories = () => {
           <div className="zapatillas">
             <h3>ZAPATILLAS</h3>
           </div>
+          <div className="futbol">
+            <h3>FÚTBOL</h3>
+          </div>
+           <div className="calzas">
+            <h3>CALZAS</h3>
+           </div>
+          <div className="pelotas">
+            <h3>PELOTAS</h3>
+          </div>
+        </div>
+
+        <div className="button-cat-mini" style={{ display: windowWidth > 360 ? 'none' : 'flex' }}>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
         </div>
 
 

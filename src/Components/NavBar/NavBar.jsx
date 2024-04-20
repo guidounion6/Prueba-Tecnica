@@ -16,8 +16,6 @@ const NavBar = ({ toggleVisible }) => {
     setNav(!nav)
   }
 
-  console.log(nav)
-
   const navicons = {
     color: "#5E5E5E",
     fontSize: "30px"
@@ -104,7 +102,7 @@ const NavBar = ({ toggleVisible }) => {
         </ul>
       </div>
 
-      <div className="nav-items-mini" style={{ display: windowWidth < 360 ? 'flex' : 'none' }}>
+      <div className="nav-items-mini" style={{ display: windowWidth <= 360 ? 'flex' : 'none' }}>
         <ul className="nav-items-list">
           <li className="user"> <a href="#micuenta"><HiOutlineUserCircle style={naviconsmini} /></a></li>
           <li> <a href="#checkout"></a><PiShoppingCartBold style={naviconsmini} /></li>

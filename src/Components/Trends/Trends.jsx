@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Trends.css"
 import { productos } from "../../productos"
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
 const Trends = () => {
@@ -11,6 +12,37 @@ const Trends = () => {
   useEffect(() => {
     setCartItems(productos)
   }, [])
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const backStyle = {
+    width: "50px",
+    height: "25px",
+    position: "relative",
+    left: "-16px",
+    top: "1px"
+  }
+
+  const nextStyle = {
+    width: "50px",
+    height: "25px",
+    position: "relative",
+    right: "11px",
+    top: "1px",
+  }
+
   return (
     <div className="Trends">
       <h2 className="trends-title">TENDENCIAS</h2>
@@ -28,7 +60,17 @@ const Trends = () => {
           </div>
         ))}
       </div>
+      <button className="button-prev" style={{ display: windowWidth > 360 ? 'block' : 'none' }}><IoIosArrowBack style={backStyle} /></button>
+      <button className="button-next" style={{ display: windowWidth > 360 ? 'block' : 'none' }}><IoIosArrowForward style={nextStyle} /></button>
+
+      <div className="button-trends-mini" style={{ display: windowWidth > 360 ? 'none' : 'flex' }}>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
     </div>
+
   )
 }
 

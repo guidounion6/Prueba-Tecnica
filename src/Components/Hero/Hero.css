@@ -23,21 +23,22 @@ img {
     top: 540px;
     left: 628px;
     justify-content: space-between;
-    padding-right:15px
+    padding-right: 15px
 }
 
 .hero-button {
     width: 12px;
     height: 12px;
-    border: 1.5px solid white;
+    border: 1px solid white;
     border-radius: 100%;
     background-color: transparent;
 }
-.hero-button:hover{
+
+.hero-button:hover {
     background-color: white
 }
 
-.hero-button.selected{
+.hero-button.selected {
     background-color: white;
 }
 
@@ -52,5 +53,32 @@ img {
         width: 360px;
         height: 140px;
     }
+
+    .button-hero-mini {
+        display: flex;
+        position: absolute;
+        width: 109px;
+        height: 10px;
+        top: 250px;
+        left: 125px;
+        justify-content: space-evenly;
+    }
+
+    .button-hero-mini>button{
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+        border-radius: 100%;
+        background-color: transparent;
+    }
+
+    .button-hero-mini>button:hover {
+        background-color: white
+    }
+    
+    .button-hero-mini>button.selected {
+        background-color: white;
+    }
+    
 
 }

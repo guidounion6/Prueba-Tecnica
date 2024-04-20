@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Popular.css"
 import { productos } from "../../productos"
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Popular = () => {
   const [cartItems, setCartItems] = useState()
@@ -8,6 +9,36 @@ const Popular = () => {
   useEffect(() => {
     setCartItems(productos)
   }, [])
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const backStyle = {
+    width: "50px",
+    height: "25px",
+    position: "relative",
+    left: "-16px",
+    top: "1px"
+  }
+
+  const nextStyle = {
+    width: "50px",
+    height: "25px",
+    position: "relative",
+    right: "11px",
+    top: "1px",
+  }
   return (
     <div className="popular-container">
       <h2 className="popular-title">LAS MAS VENDIDAS</h2>
@@ -25,6 +56,8 @@ const Popular = () => {
           </div>
         ))}
       </div>
+      <button className="button-prev-pop" style={{ display: windowWidth > 360  ? 'block' : 'none' }}><IoIosArrowBack style={backStyle} /></button>
+      <button className="button-next-pop" style={{ display: windowWidth > 360  ? 'block' : 'none' }}><IoIosArrowForward style={nextStyle}/></button>
     </div>
   )
 }

@@ -82,6 +82,32 @@
     color: white
 }
 
+.button-prev {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 60px;
+    top: 970px;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0px 4px 20px 0px #80808040;
+    cursor: pointer;
+}
+
+.button-next {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 1350px;
+    top: 970px;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0px 4px 20px 0px #80808040;
+    cursor: pointer;
+}
+
 @media (max-width:360px) {
 
     .Trends {
@@ -89,7 +115,7 @@
         height: 380px;
         gap: 32px;
         margin-top: 40px;
-        
+
     }
 
     .trends-title {
@@ -153,7 +179,7 @@
         font-weight: 600;
         line-height: 14.06px;
         text-align: center;
-        margin-left:20px
+        margin-left: 20px
     }
 
     .producto-comprar {
@@ -178,6 +204,32 @@
     .producto-comprar:hover {
         background-color: #DC1E0F;
         color: white
+    }
+
+    .button-trends-mini {
+        display: flex;
+        position: absolute;
+        width: 109px;
+        height: 10px;
+        top: 670px;
+        left: 125px;
+        justify-content: space-around;
+    }
+
+    .button-trends-mini>button{
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+        border-radius: 100%;
+        background-color: transparent;
+    }
+
+    .button-trends-mini>button:hover {
+        background-color: white
+    }
+    
+    .button-trends-mini>button.selected {
+        background-color: white;
     }
 
 }
