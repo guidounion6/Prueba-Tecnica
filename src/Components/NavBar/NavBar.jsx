@@ -4,6 +4,8 @@ import { IoMenu } from "react-icons/io5";
 import { BiWorld } from "react-icons/bi"
 import { PiShoppingCartBold } from "react-icons/pi"
 import { HiOutlineUserCircle } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
+
 import "./NavBar.css"
 
 const NavBar = ({ toggleVisible }) => {
@@ -14,7 +16,18 @@ const NavBar = ({ toggleVisible }) => {
     setNav(!nav)
   }
 
-  const navicons = { color: "#5E5E5E", fontSize: "30px" }
+  console.log(nav)
+
+  const navicons = {
+    color: "#5E5E5E",
+    fontSize: "30px"
+  }
+
+  const naviconsmini = {
+    color: "#5E5E5E",
+    fontSize: "25px"
+  }
+
   const searchiconmax = {
     color: "#BABABA",
     width: "Hug (40px)px",
@@ -48,6 +61,7 @@ const NavBar = ({ toggleVisible }) => {
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
+      setNav(false)
     };
 
     window.addEventListener('resize', handleResize);
@@ -74,7 +88,7 @@ const NavBar = ({ toggleVisible }) => {
           <div className="nav-items" style={{ display: windowWidth > 360 ? 'flex' : 'none' }}>
             <ul className="nav-items-list">
               <li className="user"> <a href="#micuenta"><HiOutlineUserCircle style={navicons} /></a> Mi cuenta</li>
-              <li> <a href="#checkout"></a><PiShoppingCartBold style={navicons} /></li>
+              <li> <a href="#checkout"></a><PiShoppingCartBold style={navicons}/></li>
             </ul>
           </div>
         </div>
@@ -88,6 +102,35 @@ const NavBar = ({ toggleVisible }) => {
           <li className="categories"><a href="#Herramientas" className='cat-a'>Herramientas</a></li>
           <li className="ofertas"><a href="#ofertas" className='cat-of'>Ofertas<BiWorld style={worldicon} /></a></li>
         </ul>
+      </div>
+
+      <div className="nav-items-mini" style={{ display: windowWidth < 360 ? 'flex' : 'none' }}>
+        <ul className="nav-items-list">
+          <li className="user"> <a href="#micuenta"><HiOutlineUserCircle style={naviconsmini} /></a></li>
+          <li> <a href="#checkout"></a><PiShoppingCartBold style={naviconsmini} /></li>
+        </ul>
+      </div>
+
+      <div onClick={handleNav} style={{ display: windowWidth > 360 ? 'none' : 'flex' }}>
+        {nav ? <AiOutlineClose className="AiOutlineClose" /> : <IoMenu className="IoMenu" />}
+      </div>
+
+      <div className={nav ? "categories-container-mini" : "categories-container-mini-none"} style={{ display: windowWidth > 360 && !nav ? 'none' : 'flex' }}>
+
+        <div className={nav ? "mobile-menu-title" : "mobile-menu-title-none"} >
+          <h3 className={nav ? "mobile-title" : "mobile-title-none"}>Mi Tienda</h3>
+        </div>
+
+        {/* <div className="categories-container-mini">
+        <ul className="categories-list-mini">
+          <li className="categories"><a href="#muebles" className='cat-a'>Muebles</a></li>
+          <li className="categories"><a href="#calzado" className='cat-a'>Calzado</a></li>
+          <li className="categories"><a href="#colchones" className='cat-a'>Colchones</a></li>
+          <li className="categories"><a href="#Herramientas" className='cat-a'>Herramientas</a></li>
+          <li className="ofertas"><a href="#ofertas" className='cat-of'>Ofertas<BiWorld style={worldicon} /></a></li>
+        </ul>
+      </div> */}
+
       </div>
 
     </div>

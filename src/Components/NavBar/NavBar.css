@@ -121,9 +121,6 @@
     color: black
 }
 
-.cat-a:active {
-    font-size: 40px;
-}
 
 .cat-of {
     padding-right: 50px;
@@ -165,7 +162,7 @@
         text-align: left;
         position: absolute;
         top: 15px;
-        left: 110px;
+        left: 90px;
         font-family: Roboto;
         font-size: 32px;
         font-style: italic;
@@ -184,5 +181,116 @@
         border-radius: 48px;
         border: 1px solid #BABABA;
     }
+
+    .IoMenu {
+        width: 41.88px;
+        height: 40px;
+        position: absolute;
+        top: 3px;
+        left: 16px;
+        padding: 12px 0px 0px 0px;
+        gap: 12px;
+    }
+
+    .AiOutlineClose {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 322px;
+        z-index: 2;
+    }
+
+    .categories-container-mini {
+        width: 360px;
+        height: 1600px;
+        background-color: white;
+        position: absolute;
+        z-index: 1;
+        animation: ease-in-out 0.5s;
+    }
+
+    .categories-container-mini-none {
+        display: none
+    }
+
+    .mobile-menu-title {
+        width: 360px;
+        height: 81px;
+        top: 732px;
+        border-bottom: 1px solid black;
+        position: absolute;
+        background-color: white;
+        z-index: 4;
+    }
+
+    .mobile-menu-title-none {
+        display: none
+    }
+
+    .mobile-title {
+        width: 170px;
+        height: 38px;
+        top: -18px;
+        left: 40px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 37.5px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #0F1E7B;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .mobile-title-none {
+        display: none
+    }
+
+    .nav-items-mini {
+        
+        position: absolute;
+        top: 5px;
+        left: 230px;
+        width: 10px;
+    }
+
+    .categories-container-mini {
+        position:absolute;
+        width: 360px;
+        background-color: white;
+    }
+
+    .categories-container-mini-none {
+        display:none 
+    }
+
+    .categories-list-mini {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 17.58px;
+        text-align: center;
+    
+    }
+
+    .categories-list-mini-none {
+        display: none
+    }
+
 
 }

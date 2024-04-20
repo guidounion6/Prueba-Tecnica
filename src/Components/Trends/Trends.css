@@ -73,7 +73,7 @@
     border-radius: 20px;
     border: 1px solid #DC1E0F;
     background-color: white;
-    margin-left: 65px;
+    margin-left: 38px;
     cursor: pointer;
 }
 
@@ -163,6 +163,7 @@
         border: 1px solid #DC1E0F;
         background-color: white;
         margin-left: 25px;
+        padding-top: 2px;
         cursor: pointer;
         color: #DC1E0F;
         text-align: center;

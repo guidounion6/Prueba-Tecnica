@@ -10,15 +10,9 @@ import Bottom from './Components/Bottom/Bottom'
 
 const App = () => {
    
-  const [isVisible, setIsVisible] = useState(false)
-
-  const toggleVisible = () => {
-    setIsVisible( prev => !prev)
-  }
-
   return (
     <div>
-      <NavBar toggleVisible={toggleVisible}/>
+      <NavBar />
       <Hero/>
       <Trends/>
       <Categories/>
