@@ -222,6 +222,7 @@
         border: 1px solid white;
         border-radius: 100%;
         background-color: transparent;
+        cursor: pointer;
     }
 
     .button-trends-mini>button:hover {

@@ -3,8 +3,6 @@
     flex-direction: row;
     width: 1440px;
     height: 290px;
-    gap: 0px;
-    opacity: 0px;
     background-color: black;
     color: white;
     justify-content: space-between;
@@ -15,8 +13,6 @@
     height: 100px;
     margin-top: 30px;
     margin-left: 50px;
-    gap: 0px;
-    opacity: 0px;
 
 }
 
@@ -37,9 +33,7 @@
     height: 40px;
     top: 169px;
     margin-left: 40px;
-    gap: 0px;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
     border: 1px solid #FFFFFF;
 
 }
@@ -82,7 +76,6 @@
     line-height: 16px;
     text-align: center;
     text-wrap: nowrap;
-
 }
 
 .text-pierce {
@@ -119,7 +112,7 @@
     opacity: 0px;
 }
 
-.sucursales{
+.sucursales {
     font-family: Rubik;
     font-size: 16px;
     font-weight: 500;
@@ -154,7 +147,7 @@ span {
     text-align: center;
 }
 
-.cat-w{
+.cat-w {
     text-decoration: none;
     color: white
 }
@@ -166,14 +159,78 @@ span {
         flex-direction: column;
         width: 360px;
         height: 681px;
-        gap: 0px;
-        opacity: 0px;
         background-color: black;
         color: white;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+
     }
-    
 
+    .footer-tienda {
+        padding-top: 0px;
+        margin-top: -100px;
+        margin-left: 20px;
+    }
 
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px
+    }
 
+    .button-discourage {
+        margin-right: 20px
+    }
+
+    .sucursales-mini {
+        margin-left: 0px;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 266px;
+        height: 64px;
+        padding-top: 50px;
+    }
+
+    .contacto>h3 {
+        width: 375px;
+        height: 681px;
+        top: 1764px;
+        left: -7px;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .email {
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        margin: 0
+    }
+
+    .direccion {
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        margin: 0
+    }
+
+    .text-container {
+        padding-left: 0px;
+        justify-content: center;
+        align-items: stretch;
+    }
 }

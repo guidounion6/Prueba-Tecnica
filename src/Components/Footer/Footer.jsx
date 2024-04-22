@@ -47,12 +47,13 @@ const Footer = () => {
   const logoAfip = {
     width: "29.46px",
     height: "37.15px",
-    
+
   }
+
 
   return (
     <div className="footer-container">
-      <div className="footer-left" >
+      <div className="footer-left" style={{ display: windowWidth > 360 ? 'block' : 'none' }} >
         <div>
           <ul className="footer-list">
             <li>CONDICIONES</li>
@@ -61,35 +62,84 @@ const Footer = () => {
             <li>PREGUNTAS FRECUENTES</li>
           </ul>
         </div>
-        <div className="button-discourage">
+        <div className="button-discourage" style={{ display: windowWidth > 360 ? 'block' : 'none' }}>
           <button>BOTÓN DE ARREPENTIMIENTO</button>
         </div>
-        <div className="text-container">
+        <div className="text-container" style={{ display: windowWidth > 360 ? 'flex' : 'none' }}>
           <p className="text-powered">Powered by Pierce Commerce</p>
           <MdOutlineEarbuds style={pierceLogo} />
           <p className="text-pierce">Pierce</p>
           <img src={vtex} alt={vtex} style={logoStyle} />
         </div>
       </div>
-      <div className="footer-tienda">
-        <p>Mi Tienda</p></div>
+      <div className="footer-tienda" style={{ display: windowWidth > 360 ? 'block' : 'none' }}>
+        <p>Mi Tienda</p>
+      </div>
       <div className="footer-right">
-        <div>
+        <div style={{ display: windowWidth > 360 ? 'block' : 'none' }}>
           <IoLocationOutline style={locationLogo} /><p className="sucursales">SUCURSALES</p>
-          <span><a href="#whatsapp" className="cat-w">Whatsapp 2215137270</a> 
+          <span><a href="#whatsapp" className="cat-w">Whatsapp 2215137270</a>
             <br />
             ecommerce@mateu.com.ar
             <br />
             La Plata 1900, Buenos Aires, Argentina
           </span>
         </div>
-        <div className="sign">
+        <div className="sign" style={{ display: windowWidth > 360 ? 'flex' : 'none' }}>
           <p>© 2023 MateuSports</p>
           <img src={afip} alt={afip} style={logoAfip} />
         </div>
       </div>
+
+      <div className="footer-tienda" style={{ display: windowWidth <= 360 ? 'block' : 'none' }}>
+        <p>Mi Tienda</p>
+      </div>
+
+      <div style={{ display: windowWidth <= 360 ? 'block' : 'none' }}>
+        <ul className="footer-list">
+          <li>CONDICIONES</li>
+          <li>TRABAJA CON NOSOTROS</li>
+          <li>MEDIOS DE PAGO</li>
+          <li>PREGUNTAS FRECUENTES</li>
+        </ul>
+      </div>
+
+      <div className="button-discourage" style={{ display: windowWidth <= 360 ? 'block' : 'none' }}>
+        <button>BOTÓN DE ARREPENTIMIENTO</button>
+      </div>
+
+      <div className="sucursales-mini" style={{ display: windowWidth <= 360 ? 'block' : 'none' }}>
+        <IoLocationOutline style={locationLogo} /><p className="sucursales">SUCURSALES</p>
+      </div>
+
+      <div className="contacto" style={{ display: windowWidth <= 360 ? 'flex' : 'none' }}>
+       <h3><a href="#whatsapp" className="cat-w">Whatsapp 2215137270</a></h3> 
+          <h4 className="email">ecommerce@mateu.com.ar</h4>
+          <h4 className="direccion">La Plata 1900, Buenos Aires, Argentina</h4>
+      </div>
+
+
+      <div className="text-container" style={{ display: windowWidth <= 360 ? 'flex' : 'none' }}>
+        <p className="text-powered">Powered by Pierce Commerce</p>
+        <MdOutlineEarbuds style={pierceLogo} />
+        <p className="text-pierce">Pierce</p>
+      </div>
+
+      <div className="sign" style={{ display: windowWidth <= 360 ? 'flex' : 'none' }}>
+        <p>© 2023 MateuSports</p>
+      </div>
+
+      <div style={{ display: windowWidth <= 360 ? 'inline' : 'none' }}>
+        <img src={afip} alt={afip} style={logoAfip} />
+        <img src={vtex} alt={vtex} style={logoStyle} />
+      </div>
+
+
+
+
     </div>
   )
 }
+
 
 export default Footer

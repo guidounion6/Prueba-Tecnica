@@ -148,7 +148,6 @@
         line-height: 28px;
         text-align: left;
         margin-left: 9px
-      
     }
 
     .cat-container-mini {
@@ -158,7 +157,7 @@
         width: 360px;
         height: 229px;
         gap: 14px;
-        
+
     }
 
     .zapatillas {
@@ -168,8 +167,14 @@
         background-image: url("../../assets/zapasNike.jpeg");
         background-size: cover;
         background-position: center;
+        z-index: 1;
     }
-    
+
+    .zapatillas>h3 {
+        padding-top: 95px;
+        padding-left: 10px;
+    }
+
     .futbol {
         width: 360px;
         height: 208px;
@@ -181,6 +186,7 @@
         margin-left: 0;
         position: absolute;
     }
+
     .calzas {
         width: 360px;
         height: 208px;
@@ -191,7 +197,9 @@
         margin-top: 0;
         margin-left: 0;
         position: absolute;
+
     }
+
     .pelotas {
         width: 360px;
         height: 208px;
@@ -201,9 +209,42 @@
         background-position: center;
         margin-top: 0;
         margin-left: 0;
-        position: absolute; 
+        position: absolute;
+       
     }
-    
+
+    .pelotas>h3 {
+        padding-top: 95px;
+        padding-left: 10px;
+    }
+
+    .button-cat-mini {
+        display: flex;
+        position: absolute;
+        width: 109px;
+        height: 10px;
+        top: 1035px;
+        left: 125px;
+        justify-content: space-evenly; 
+    }
+
+    .button-cat-mini>button {
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        border-radius: 100%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .button-cat-mini>button:hover {
+        background-color: black
+    }
+
+    .button-cat-mini>button.selected {
+        background-color: black;
+    }
+
 
 
 }

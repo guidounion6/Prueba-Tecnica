@@ -73,4 +73,34 @@
         top: -10px
     }
 
+    .button-popular-mini {
+        display: flex;
+        position: absolute;
+        width: 109px;
+        height: 10px;
+        top: 1425px;
+        left: 125px;
+        justify-content: space-around;
+    }
+
+    .button-popular-mini>button{
+        width: 10px;
+        height: 10px;
+        border: 1px solid  #DC1E0F;
+;
+        border-radius: 100%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .button-popular-mini>button:hover {
+        background-color:  #DC1E0F;
+
+    }
+    
+    .button-popular-mini>button.selected {
+        background-color:  #DC1E0F;
+
+    }
+
 }

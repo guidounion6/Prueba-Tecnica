@@ -24,6 +24,13 @@ const Popular = () => {
     };
   }, []);
 
+  const [selectedButton, setSelectedButton] = useState(null);
+
+  const handleButtonClick = (index) => {
+    setSelectedButton(index);
+    console.log(`Botón ${index + 1} seleccionado`);
+  };
+
   const backStyle = {
     width: "50px",
     height: "25px",
@@ -58,6 +65,13 @@ const Popular = () => {
       </div>
       <button className="button-prev-pop" style={{ display: windowWidth > 360  ? 'block' : 'none' }}><IoIosArrowBack style={backStyle} /></button>
       <button className="button-next-pop" style={{ display: windowWidth > 360  ? 'block' : 'none' }}><IoIosArrowForward style={nextStyle}/></button>
+
+      <div className="button-popular-mini" style={{ display: windowWidth > 360 ? 'none' : 'flex' }}>
+        <button onClick={() => handleButtonClick(0)} className={selectedButton === 0 ? 'selected' : ''}></button>
+        <button onClick={() => handleButtonClick(1)} className={selectedButton === 1 ? 'selected' : ''}></button>
+        <button onClick={() => handleButtonClick(2)} className={selectedButton === 2 ? 'selected' : ''}></button>
+        <button onClick={() => handleButtonClick(3)} className={selectedButton === 3 ? 'selected' : ''}></button>
+      </div>
     </div>
   )
 }
