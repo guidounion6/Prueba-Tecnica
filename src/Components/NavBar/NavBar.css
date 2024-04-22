@@ -114,7 +114,6 @@
 .cat-a {
     text-decoration: none;
     color: #5E5E5E;
-
 }
 
 .cat-a:hover {
@@ -172,6 +171,10 @@
 
     }
 
+    .nav-items{
+        display: none
+    }
+
     .searchbar {
         width: 328px;
         height: 40px;
@@ -221,7 +224,6 @@
         border-bottom: 1px solid black;
         position: absolute;
         background-color: white;
-        z-index: 4;
     }
 
     .mobile-menu-title-none {
@@ -242,7 +244,6 @@
         text-align: left;
         color: #0F1E7B;
         position: absolute;
-        z-index: 3;
     }
 
     .mobile-title-none {
@@ -250,17 +251,22 @@
     }
 
     .nav-items-mini {
-        
         position: absolute;
         top: 5px;
         left: 230px;
         width: 10px;
     }
 
-    .categories-container-mini {
-        position:absolute;
-        width: 360px;
-        background-color: white;
+    .categories-column-mini{
+        display: flex;
+        position: relative; 
+        background-color: transparent;
+        margin-top: 400px;
+        z-index: 3;
+    }
+
+    .categories-column-mini-none{
+        display: none
     }
 
     .categories-container-mini-none {
@@ -272,8 +278,17 @@
         flex-direction: column;
         justify-content: center;
         list-style: none;
-        position: absolute;
-        z-index: 5;
+        position: relative;
+        background-color: transparent;
+        margin: 0;
+        z-index: 2;
+    }
+    .categories{
+        padding-bottom: 25px;
+    }
+
+    .categories-list-mini-none{
+        display:none
     }
 
     .user {
@@ -291,6 +306,14 @@
     .categories-list-mini-none {
         display: none
     }
+
+    .line {
+        width: 290px;
+        height: 0px;
+        top: 155px;
+        left: 27px;
+        border: 0.65px solid #000000;
+      }
 
 
 }

@@ -8,7 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import "./NavBar.css"
 
-const NavBar = ({ toggleVisible }) => {
+const NavBar = () => {
 
   const [nav, setNav] = useState(false)
 
@@ -83,17 +83,17 @@ const NavBar = ({ toggleVisible }) => {
             <input type="search" className="searchbar" />
             <FiSearch style={searchicon} />
           </div>
-          <div className="nav-items" style={{ display: windowWidth > 360 ? 'flex' : 'none' }}>
+          <div className="nav-items" style={{ display: windowWidth > 360 && !nav ? 'block' : 'none' }}>
             <ul className="nav-items-list">
               <li className="user"> <a href="#micuenta"><HiOutlineUserCircle style={navicons} /></a> Mi cuenta</li>
-              <li> <a href="#checkout"></a><PiShoppingCartBold style={navicons}/></li>
+              <li> <a href="#checkout"></a><PiShoppingCartBold style={navicons} /></li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="categories-container" style={{ display: windowWidth > 360 ? 'flex' : 'none' }}>
-        <ul className="categories-list">
+      <div className="categories-container" style={{ display: windowWidth > 360 && !nav ? 'flex' : 'none' }}>
+        <ul className="categories-list" style={{ display: windowWidth > 360 && !nav ? 'flex' : 'none' }}>
           <li className="categories"><a href="#muebles" className='cat-a'>Muebles</a></li>
           <li className="categories"><a href="#calzado" className='cat-a'>Calzado</a></li>
           <li className="categories"><a href="#colchones" className='cat-a'>Colchones</a></li>
@@ -119,18 +119,20 @@ const NavBar = ({ toggleVisible }) => {
           <h3 className={nav ? "mobile-title" : "mobile-title-none"}>Mi Tienda</h3>
         </div>
 
-        {/* <div className="categories-container-mini">
-        <ul className="categories-list-mini">
-          <li className="categories"><a href="#muebles" className='cat-a'>Muebles</a></li>
-          <li className="categories"><a href="#calzado" className='cat-a'>Calzado</a></li>
-          <li className="categories"><a href="#colchones" className='cat-a'>Colchones</a></li>
-          <li className="categories"><a href="#Herramientas" className='cat-a'>Herramientas</a></li>
-          <li className="ofertas"><a href="#ofertas" className='cat-of'>Ofertas<BiWorld style={worldicon} /></a></li>
-        </ul>
-      </div> */}
-
+        <div className={nav ? "categories-column-mini" : "categories-column-mini-none"} >
+          <ul className={nav ? "categories-list-mini" : "categories-list-mini-none"}>
+            <li className="categories"><a href="#muebles" className='cat-a'>Muebles</a></li>
+            <hr className="line" />
+            <li className="categories"><a href="#calzado" className='cat-a'>Calzado</a></li>
+            <hr className="line" />
+            <li className="categories"><a href="#colchones" className='cat-a'>Colchones</a></li>
+            <hr className="line" />
+            <li className="categories"><a href="#Herramientas" className='cat-a'>Herramientas</a></li>
+            <hr className="line" />
+            <li className="ofertas"><a href="#ofertas" className='cat-of'>Ofertas<BiWorld style={worldicon} /></a></li>
+          </ul>
+        </div>
       </div>
-
     </div>
   )
 }

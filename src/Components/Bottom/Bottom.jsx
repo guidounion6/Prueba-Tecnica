@@ -55,7 +55,7 @@ const Bottom = () => {
         </div>
       </div>
 
-      <div className="bag-container-mini" style={{ display: windowWidth < 360 ? 'block' : 'none' }} id="1">
+      <div className="bag-container-mini" style={{ display: windowWidth <= 360 ? 'block' : 'none' }} id="1">
         <IoBagOutline size={50} />
         <div className="bag-textbox">
           <p className="bag-title">ELEGÍ LOS PRODUCTOS QUE VAS A COMPRAR</p>
